@@ -4,16 +4,17 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Skills from "./pages/Skills";
 import Navbar from "./Components/Navbar";
+import Error from "./pages/Error";
 
 const App = () => {
   return (
     <BrowserRouter>
-    <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/project" element={<Project />}></Route>
         <Route path="/skills" element={<Skills />}></Route>
-        
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
   );
