@@ -5,7 +5,6 @@ import profile from "../assets/profile2.jpg";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <br />
       <div className="home">
         <div className="home-content">

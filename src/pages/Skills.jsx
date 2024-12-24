@@ -5,7 +5,6 @@ import image from "../assets/skills.jpg";
 const Users = () => {
   return (
     <>
-      <Navbar />
       <br />
       <div className="skill">
         <div className="skill-img">

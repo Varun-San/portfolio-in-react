@@ -6,7 +6,6 @@ import project3 from "../assets/project3.png"
 const About = () => {
   return (
     <>
-      <Navbar />
       <br />
       <div className="pro">
         <h2>Project</h2>
