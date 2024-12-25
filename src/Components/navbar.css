@@ -25,3 +25,8 @@ ul > li a {
 ul > li a:hover {
   color: #ffcc00;
 }
+
+ul > li:hover {
+  cursor: pointer;
+  color: #ffcc00;
+}

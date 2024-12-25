@@ -1,26 +1,29 @@
 import React from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Nav = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    //Some Api calls
+    navigate("/");
+  };
+
   return (
-    <nav>
-      <h3>Varun V S</h3>
-      <div className="navbar">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/skills">Skill</Link>
-          </li>
-          <li>
-            <Link to="/project">Project</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <>
+      <nav>
+        <h3>Varun V S</h3>
+        <div className="navbar">
+          <ul>
+            <li onClick={handleClick}>Home</li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 };
 
-export default Navbar;
+export default Nav;
