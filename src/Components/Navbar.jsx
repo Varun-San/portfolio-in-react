@@ -10,19 +10,20 @@ const Nav = () => {
   };
 
   return (
-    <>
-      <nav>
-        <h3>Varun V S</h3>
-        <div className="navbar">
-          <ul>
-            <li onClick={handleClick}>Home</li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
+    <nav>
+      <h3>Varun V S</h3>
+      <div className="navbar">
+        <ul>
+          <li onClick={handleClick}>Home</li>
+          <li>
+            <Link to="/skills">Skill</Link>
+          </li>
+          <li>
+            <Link to="/project">Project</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
